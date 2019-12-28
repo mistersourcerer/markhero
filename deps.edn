@@ -1,0 +1,5 @@
+{
+ :paths ["src" "classes"]
+ :aliases {
+           :test {:extra-paths ["test"]
+                  :main-opts ["-m" "markhero-test"]}}}
