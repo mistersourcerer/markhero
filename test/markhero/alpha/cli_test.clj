@@ -1,4 +1,4 @@
-(ns markhero.alpha-test
+(ns markhero.alpha.cli-test
   (:use [clojure.test :only [deftest testing is]]))
 
 (deftest getting-ready

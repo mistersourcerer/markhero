@@ -1,8 +1,9 @@
 {
- :paths ["src" "classes"]
- :aliases {
+ :paths ["src"]
+ :deps {org.clojure/data.json {:mvn/version "0.2.7"}}
+ :aliases {:run {:main-opts ["-m" "markhero.alpha.cli"]}
            :test {:extra-paths ["test"]
-                  :main-opts ["-m" "markhero-test"]}}}
+                  :main-opts ["-m" "markhero-test"]}
            :depstar {:extra-deps {seancorfield/depstar {:mvn/version "0.3.4"}}
                     :main-opts ["-m" "hf.depstar.uberjar"
                                 "target/markhero.jar"
