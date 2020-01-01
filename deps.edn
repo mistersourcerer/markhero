@@ -3,3 +3,7 @@
  :aliases {
            :test {:extra-paths ["test"]
                   :main-opts ["-m" "markhero-test"]}}}
+           :depstar {:extra-deps {seancorfield/depstar {:mvn/version "0.3.4"}}
+                    :main-opts ["-m" "hf.depstar.uberjar"
+                                "target/markhero.jar"
+                                "-m" "markhero.alpha.cli"]}}}
